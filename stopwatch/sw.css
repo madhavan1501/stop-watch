@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+@font-face {
+    font-family: 'digital';
+    src: url('digital-7.ttf');
+}
+
+
+        body{
+            display: grid;  /* CSS */
+            place-items: center;
+            width: 100vw;
+            height: 100vh;
+            font-family: 'sans-serif';
+            background-color: black;
+            user-select: none;
+        }
+        .container{
+            background-color: black;
+            padding: 30px;
+            height: 400px;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            border-radius: 50%;
+            align-items:center;
+            transition: box-shadow 1s;
+        }
+        .container:hover{
+            box-shadow: 0 0 15px  white;
+        }
+
+        .outline{
+            border: 1px solid white;
+            padding: 70px;
+        }
+            .timer{
+                display: flex;
+                justify-content: space-evenly;
+                color: white;
+                font-family: 'digital';
+            }
+            .buttons{
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 30px;
+                width: 100%;
+                align-content: space-evenly;
+            }
+            .num{
+                font-size: 50px;
+                font-weight: 500;
+                width: 50px;
+                text-align: center;
+            }
+            .reset{
+                width: 150px;
+                text-align: center;
+                border-radius: 10px;
+                transition: all 0.5s;
+            }
+
+
+                .btn{
+                    font-size: 25px;
+                    font-weight: 500;
+                    padding: 10px 20px;
+                    border-radius: 50%;
+                    box-shadow:0 0 10px  white;
+                    border: none;
+                    background-color: white;
+                    cursor: pointer;
+                }
+                .col{
+                    line-height: 30px;
+                }
+                .reset:hover{
+                    width: 80%;
+                    letter-spacing: 10px;
+                    border-radius: 30px;
+                }
+                .start-true,.stop-true{
+                    box-shadow: none;
+                    pointer-events: none;
+                    opacity: 0.7;
+                }
+                .btn:active{
+                    box-shadow: none;
+                }
